@@ -1,0 +1,355 @@
+{
+  "info": {
+    "_postman_id": "2ac66688-b683-41b9-866b-743f6c5505ba",
+    "name": "Hapi.js API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "10048149"
+  },
+  "item": [
+    {
+      "name": "v1",
+      "item": [
+        {
+          "name": "auth",
+          "item": [
+            {
+              "name": "/login",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "sec-ch-ua",
+                    "value": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\""
+                  },
+                  {
+                    "key": "DNT",
+                    "value": "1"
+                  },
+                  {
+                    "key": "sec-ch-ua-mobile",
+                    "value": "?0"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json, text/plain, */*"
+                  },
+                  {
+                    "key": "Referer",
+                    "value": "http://127.0.0.1:3000/"
+                  },
+                  {
+                    "key": "sec-ch-ua-platform",
+                    "value": "\"Linux\""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"email\":\"test@gmail.com\",\"password\":\"U8NRLM9qtrDfJhQ\"}"
+                },
+                "url": {
+                  "raw": "{{host}}/api/v1/login",
+                  "host": ["{{host}}"],
+                  "path": ["api", "v1", "login"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "meta",
+          "item": [
+            {
+              "name": "health",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "sec-ch-ua",
+                    "value": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\""
+                  },
+                  {
+                    "key": "DNT",
+                    "value": "1"
+                  },
+                  {
+                    "key": "sec-ch-ua-mobile",
+                    "value": "?0"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json, text/plain, */*"
+                  },
+                  {
+                    "key": "Referer",
+                    "value": "http://127.0.0.1:3000/"
+                  },
+                  {
+                    "key": "sec-ch-ua-platform",
+                    "value": "\"Linux\""
+                  }
+                ],
+                "url": {
+                  "raw": "{{host}}/api/v1/health",
+                  "host": ["{{host}}"],
+                  "path": ["api", "v1", "health"]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "user",
+          "item": [
+            {
+              "name": "/users",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "sec-ch-ua",
+                    "value": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\""
+                  },
+                  {
+                    "key": "DNT",
+                    "value": "1"
+                  },
+                  {
+                    "key": "sec-ch-ua-mobile",
+                    "value": "?0"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json, text/plain, */*"
+                  },
+                  {
+                    "key": "Referer",
+                    "value": "http://127.0.0.1:3000/"
+                  },
+                  {
+                    "key": "sec-ch-ua-platform",
+                    "value": "\"Linux\""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"user\":{\"email\":\"test@gmail.com\",\"password\":\"U8NRLM9qtrDfJhQ\",\"firstName\":\"Vijal\",\"lastName\":\"Patel\"}, \"captchaToken\":\"P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.hKdwYXNza2V5xQRARuHmwkqSHvruVcgs501CpGTPu_feQzehY1RPWc83ZaSrhMF5-3ADaDueYD-vcgsHk_qqiKwuCRmfdEsvZtVl6yJHHh0_6I6HNAL9me-VBSfvrmsr_OJdAn-lndJudLPU-CgrlPNGDngKu2r770Xvv5x9DEhv8iwKvjwLlAb55xGd84Qc2Us6Cd9tZpYnaLVuBRDJGvqQNZ4J_g2zM6BcNlYAEkH25SAgKAURip07FkXU4wYu8GjPucqoxqUe8P0GFJqtk-iLD_fQW268VvVhdk2QYzoEEcWOVSsNYxNgvjdUXPDE4nV7ymsQivXCOG3J6PG7w8Bn64VckzdP-Le6CqEWYor99EtwEA7wgr-HtNd-uzV_zIjEBXH329YUyFvxiD8jg6icTPOWckkVFj77KSDllqnyulQxUKE8sHcaxLQN1lbiXIz3TvA-MUG7Uopz5-JNPwqbAtbAAz2nMuxs4gYh6LVxQaiSA06hA__vMdGqjPck1Q6xMjZhYdsnlSAW_qU945s4tezGf6jnSKeAIgNrK9UwOK-kYziuTAxfepLgmq4JSsAyBhYIW4Yo5x37C7S93SBBMMqJnrxNKZ-0KmRF8Ae5JaVBlbhKt-K9e7g2LjJisaiPk9iqaWz1Ij8w6oZLedk_e7vGtP4oftsyNvWB2-DDdZMWs3Gz5IbanqkoOZDXPM_wNyNrAUEzh8fTSwGYIJQ169mITnmcIcCN9skznuAI5wLNiFdlsc1pWtBzHvSEWMNt0u3NhKuRQVe7Q0Nq8ivIQ2XTROeYgAKDkBwdb1yXCD2vatZs1Ab-f9XUxTByTGM8bbhtSzfF45IvDzSB1O7A3hvCw7hdCuPhsyE71Xqi_f3EB8YWm0V4j73ufrxaV1PTJfbcheU8Idyf-1oENac7TTIye6JDTD5JifS-PEub-3X-98-lHBPTmrPqL8kg95fYka4_Ba_-JXS0xTgoecwm5uNacCN2-joL41mqsk1xkJA3aMH2E4-qOC5CXp4MIiyrKo4Bg4cT16MMzu9AJ4Sen8SSAi__F88Z8xApAjBZaYGAWeWbwwfSqWB0upDUkZ0nXW6hEIO8QlSuDB3UiV4yFjjivYWoHIkbJAPSBygTvKcI6_pMJoC8b3KkzEj3bXetI0htAZYNtMfxNFU0A-tna_QSThsbfBBce3ttE0mxraORXRMSSO974jshWh6pTmHRd8xWXFVYdKPVf0VQAaIICfyBsQ5r0gJPD9DgvNvVeBJvSR02pAExSGPkAGMaf74Fvn6TihI4D6DUhslpRJYVh6fwgyfxhsZQ5NzrU0mAlxC_0tHP3UGProqLq-g4rcXMwOWazClOM8ThtEDqYwYunwTj3eK6OFFg2CHAAh8tbcx6cdnZWX7gdIRiGWE22_aFWjMP6cRKrw6ML_C9BZJWvDoacPNCcLxeKgfYWYGLpYU4pofvtoLTM5ajZXhwzmTX0rmoc2hhcmRfaWTOFDyEH6JwZAA.OQmW1iJwSI0EowKI1WLyK_j9b2WX2D6kUr0_wYHq6LI\"}"
+                },
+                "url": {
+                  "raw": "{{host}}/api/v1/users",
+                  "host": ["{{host}}"],
+                  "path": ["api", "v1", "users"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/users",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{accessToken}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "sec-ch-ua",
+                    "value": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\""
+                  },
+                  {
+                    "key": "DNT",
+                    "value": "1"
+                  },
+                  {
+                    "key": "sec-ch-ua-mobile",
+                    "value": "?0"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json, text/plain, */*"
+                  },
+                  {
+                    "key": "Referer",
+                    "value": "http://127.0.0.1:3000/"
+                  },
+                  {
+                    "key": "sec-ch-ua-platform",
+                    "value": "\"Linux\""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"firstName\":\"hi\"}"
+                },
+                "url": {
+                  "raw": "{{host}}/api/v1/users/{{id}}",
+                  "host": ["{{host}}"],
+                  "path": ["api", "v1", "users", "{{id}}"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/users",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{accessToken}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "sec-ch-ua",
+                    "value": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\""
+                  },
+                  {
+                    "key": "DNT",
+                    "value": "1"
+                  },
+                  {
+                    "key": "sec-ch-ua-mobile",
+                    "value": "?0"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json, text/plain, */*"
+                  },
+                  {
+                    "key": "Referer",
+                    "value": "http://127.0.0.1:3000/"
+                  },
+                  {
+                    "key": "sec-ch-ua-platform",
+                    "value": "\"Linux\""
+                  }
+                ],
+                "url": {
+                  "raw": "{{host}}/api/v1/users/{{id}}",
+                  "host": ["{{host}}"],
+                  "path": ["api", "v1", "users", "{{id}}"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "/users",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{accessToken}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "sec-ch-ua",
+                    "value": "\"Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"115\", \"Chromium\";v=\"115\""
+                  },
+                  {
+                    "key": "DNT",
+                    "value": "1"
+                  },
+                  {
+                    "key": "sec-ch-ua-mobile",
+                    "value": "?0"
+                  },
+                  {
+                    "key": "User-Agent",
+                    "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json, text/plain, */*"
+                  },
+                  {
+                    "key": "Referer",
+                    "value": "http://127.0.0.1:3000/"
+                  },
+                  {
+                    "key": "sec-ch-ua-platform",
+                    "value": "\"Linux\""
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"email\":\"test@gmail.com\",\"password\":\"U8NRLM9qtrDfJhQ\",\"name\":\"Vijal\",\"lastName\":\"Patel\",\"captchaToken\":\"P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.hKdwYXNza2V5xQRARuHmwkqSHvruVcgs501CpGTPu_feQzehY1RPWc83ZaSrhMF5-3ADaDueYD-vcgsHk_qqiKwuCRmfdEsvZtVl6yJHHh0_6I6HNAL9me-VBSfvrmsr_OJdAn-lndJudLPU-CgrlPNGDngKu2r770Xvv5x9DEhv8iwKvjwLlAb55xGd84Qc2Us6Cd9tZpYnaLVuBRDJGvqQNZ4J_g2zM6BcNlYAEkH25SAgKAURip07FkXU4wYu8GjPucqoxqUe8P0GFJqtk-iLD_fQW268VvVhdk2QYzoEEcWOVSsNYxNgvjdUXPDE4nV7ymsQivXCOG3J6PG7w8Bn64VckzdP-Le6CqEWYor99EtwEA7wgr-HtNd-uzV_zIjEBXH329YUyFvxiD8jg6icTPOWckkVFj77KSDllqnyulQxUKE8sHcaxLQN1lbiXIz3TvA-MUG7Uopz5-JNPwqbAtbAAz2nMuxs4gYh6LVxQaiSA06hA__vMdGqjPck1Q6xMjZhYdsnlSAW_qU945s4tezGf6jnSKeAIgNrK9UwOK-kYziuTAxfepLgmq4JSsAyBhYIW4Yo5x37C7S93SBBMMqJnrxNKZ-0KmRF8Ae5JaVBlbhKt-K9e7g2LjJisaiPk9iqaWz1Ij8w6oZLedk_e7vGtP4oftsyNvWB2-DDdZMWs3Gz5IbanqkoOZDXPM_wNyNrAUEzh8fTSwGYIJQ169mITnmcIcCN9skznuAI5wLNiFdlsc1pWtBzHvSEWMNt0u3NhKuRQVe7Q0Nq8ivIQ2XTROeYgAKDkBwdb1yXCD2vatZs1Ab-f9XUxTByTGM8bbhtSzfF45IvDzSB1O7A3hvCw7hdCuPhsyE71Xqi_f3EB8YWm0V4j73ufrxaV1PTJfbcheU8Idyf-1oENac7TTIye6JDTD5JifS-PEub-3X-98-lHBPTmrPqL8kg95fYka4_Ba_-JXS0xTgoecwm5uNacCN2-joL41mqsk1xkJA3aMH2E4-qOC5CXp4MIiyrKo4Bg4cT16MMzu9AJ4Sen8SSAi__F88Z8xApAjBZaYGAWeWbwwfSqWB0upDUkZ0nXW6hEIO8QlSuDB3UiV4yFjjivYWoHIkbJAPSBygTvKcI6_pMJoC8b3KkzEj3bXetI0htAZYNtMfxNFU0A-tna_QSThsbfBBce3ttE0mxraORXRMSSO974jshWh6pTmHRd8xWXFVYdKPVf0VQAaIICfyBsQ5r0gJPD9DgvNvVeBJvSR02pAExSGPkAGMaf74Fvn6TihI4D6DUhslpRJYVh6fwgyfxhsZQ5NzrU0mAlxC_0tHP3UGProqLq-g4rcXMwOWazClOM8ThtEDqYwYunwTj3eK6OFFg2CHAAh8tbcx6cdnZWX7gdIRiGWE22_aFWjMP6cRKrw6ML_C9BZJWvDoacPNCcLxeKgfYWYGLpYU4pofvtoLTM5ajZXhwzmTX0rmoc2hhcmRfaWTOFDyEH6JwZAA.OQmW1iJwSI0EowKI1WLyK_j9b2WX2D6kUr0_wYHq6LI\"}"
+                },
+                "url": {
+                  "raw": "{{host}}/api/v1/users/{{id}}",
+                  "host": ["{{host}}"],
+                  "path": ["api", "v1", "users", "{{id}}"]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
