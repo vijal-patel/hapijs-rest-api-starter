@@ -30,10 +30,6 @@ This project is a work in progress **Hapi.js** REST API
    npm i
    ```
 
-   bash
-   Copy code
-   npm install
-
 2. Set up environment variables in a .env file:
 
    ```bash
