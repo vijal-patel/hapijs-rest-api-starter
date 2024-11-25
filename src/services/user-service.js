@@ -9,7 +9,7 @@ const COLLECTION = "user";
 
 export const createUser = async (user, client) => {
   await modelValidator(user, createUserSchema);
-  // await createUserSchema.validateAsync(user);
+  await createUserSchema.validateAsync(user);
 
   user.password = await hashPassword(user.password);
   user.createdAt = new Date();

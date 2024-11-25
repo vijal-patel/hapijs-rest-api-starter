@@ -1,21 +1,4 @@
 import Joi from "joi";
-import { ObjectId } from "mongodb";
-
-// export interface User {
-//     password;
-//     email;
-//     firstName;
-//     lastName;
-//     createdAt?: Date;
-//     updatedAt?: Date;
-//     emailConfirmed;
-//     linkedCompanyIds?: Array<string>;
-//     _id?Id;
-//     otp?: {
-//         verificationCode;
-//         expirationDate: number;
-//     };
-// }
 
 export const createUserSchema = Joi.object().keys({
   _id: Joi.forbidden(),

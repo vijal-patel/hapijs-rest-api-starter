@@ -40,21 +40,9 @@ export default async function setup() {
       return h.continue;
     });
 
-    // server.events.on("log", (event, tag) => {
-    //   console.log(event);
-    // });
-
     await server.register({
       plugin: HapiPino,
-      options: {
-        // Redact Authorization headers, see https://getpino.io/#/docs/redaction
-        // redact: {
-        //   paths: ["req.headers", "req.remoteAddress", "req.remotePort"],
-        //   remove: true,
-        // },
-        // TODO https://github.com/pinojs/pino-toke for prod
-        // ...(env === "dev" && { transport: { target: "pino-pretty" } }),
-      },
+      options: { },
     });
 
     await server.register([mongodbPlugin, llmPlugin, jwtPlugin, mailPlugin]);
